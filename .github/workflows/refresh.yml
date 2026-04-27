@@ -1,0 +1,28 @@
+name: Refresh NTSK data
+
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Fetch latest data
+        env:
+          ALPHA_VANTAGE_KEY: ${{ secrets.ALPHA_VANTAGE_KEY }}
+        run: node scripts/refresh.mjs
+      - name: Commit updated data
+        run: |
+          git config user.name "ntsk-bot"
+          git config user.email "actions@github.com"
+          git add data/ntsk.json
+          git diff --staged --quiet || git commit -m "chore: refresh NTSK data"
+          git push
