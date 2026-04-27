@@ -7,7 +7,7 @@ const OUT = path.join("data", "ntsk.json");
 
 if (!API_KEY) { console.error("Missing ALPHA_VANTAGE_KEY"); process.exit(1); }
 
-const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${TICKER}&outputsize=full&apikey=${API_KEY}`;
+const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${TICKER}&outputsize=compact&apikey=${API_KEY}`;
 const res = await fetch(url);
 const raw = await res.json();
 
