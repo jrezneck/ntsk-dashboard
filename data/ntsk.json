@@ -1,1 +1,414 @@
-{"ticker":"NTSK","note":"Will be filled by the workflow"}
+{
+  "ticker": "NTSK",
+  "asOf": "2026-04-24",
+  "refreshedAt": "2026-04-27T03:21:53.410Z",
+  "market": {
+    "price": 9.63,
+    "prevClose": 9.79,
+    "dayChangePct": -1.63,
+    "yearLow": 7.73,
+    "yearHigh": 23.5
+  },
+  "priceHistory": [
+    {
+      "date": "Dec 1 '25",
+      "close": 17.75
+    },
+    {
+      "date": "Dec 2 '25",
+      "close": 17.88
+    },
+    {
+      "date": "Dec 3 '25",
+      "close": 18.33
+    },
+    {
+      "date": "Dec 4 '25",
+      "close": 19.68
+    },
+    {
+      "date": "Dec 5 '25",
+      "close": 20.73
+    },
+    {
+      "date": "Dec 8 '25",
+      "close": 22.28
+    },
+    {
+      "date": "Dec 9 '25",
+      "close": 22.88
+    },
+    {
+      "date": "Dec 10 '25",
+      "close": 22.5
+    },
+    {
+      "date": "Dec 11 '25",
+      "close": 23.5
+    },
+    {
+      "date": "Dec 12 '25",
+      "close": 20.72
+    },
+    {
+      "date": "Dec 15 '25",
+      "close": 19.05
+    },
+    {
+      "date": "Dec 16 '25",
+      "close": 20.04
+    },
+    {
+      "date": "Dec 17 '25",
+      "close": 18.5
+    },
+    {
+      "date": "Dec 18 '25",
+      "close": 18.9
+    },
+    {
+      "date": "Dec 19 '25",
+      "close": 19.26
+    },
+    {
+      "date": "Dec 22 '25",
+      "close": 19.71
+    },
+    {
+      "date": "Dec 23 '25",
+      "close": 18.55
+    },
+    {
+      "date": "Dec 24 '25",
+      "close": 18.5
+    },
+    {
+      "date": "Dec 26 '25",
+      "close": 18.29
+    },
+    {
+      "date": "Dec 29 '25",
+      "close": 18.17
+    },
+    {
+      "date": "Dec 30 '25",
+      "close": 17.93
+    },
+    {
+      "date": "Dec 31 '25",
+      "close": 17.54
+    },
+    {
+      "date": "Jan 2 '26",
+      "close": 16.9
+    },
+    {
+      "date": "Jan 5 '26",
+      "close": 17.15
+    },
+    {
+      "date": "Jan 6 '26",
+      "close": 17.34
+    },
+    {
+      "date": "Jan 7 '26",
+      "close": 17.65
+    },
+    {
+      "date": "Jan 8 '26",
+      "close": 16.73
+    },
+    {
+      "date": "Jan 9 '26",
+      "close": 16.63
+    },
+    {
+      "date": "Jan 12 '26",
+      "close": 16.56
+    },
+    {
+      "date": "Jan 13 '26",
+      "close": 16.4
+    },
+    {
+      "date": "Jan 14 '26",
+      "close": 15.71
+    },
+    {
+      "date": "Jan 15 '26",
+      "close": 15.4
+    },
+    {
+      "date": "Jan 16 '26",
+      "close": 14.76
+    },
+    {
+      "date": "Jan 20 '26",
+      "close": 14.99
+    },
+    {
+      "date": "Jan 21 '26",
+      "close": 14.83
+    },
+    {
+      "date": "Jan 22 '26",
+      "close": 15.6
+    },
+    {
+      "date": "Jan 23 '26",
+      "close": 15.29
+    },
+    {
+      "date": "Jan 26 '26",
+      "close": 15.42
+    },
+    {
+      "date": "Jan 27 '26",
+      "close": 15.76
+    },
+    {
+      "date": "Jan 28 '26",
+      "close": 16.1
+    },
+    {
+      "date": "Jan 29 '26",
+      "close": 15.35
+    },
+    {
+      "date": "Jan 30 '26",
+      "close": 14.85
+    },
+    {
+      "date": "Feb 2 '26",
+      "close": 14.1
+    },
+    {
+      "date": "Feb 3 '26",
+      "close": 13.18
+    },
+    {
+      "date": "Feb 4 '26",
+      "close": 13.11
+    },
+    {
+      "date": "Feb 5 '26",
+      "close": 11.53
+    },
+    {
+      "date": "Feb 6 '26",
+      "close": 12.01
+    },
+    {
+      "date": "Feb 9 '26",
+      "close": 11.97
+    },
+    {
+      "date": "Feb 10 '26",
+      "close": 12.22
+    },
+    {
+      "date": "Feb 11 '26",
+      "close": 11.81
+    },
+    {
+      "date": "Feb 12 '26",
+      "close": 11.49
+    },
+    {
+      "date": "Feb 13 '26",
+      "close": 11.89
+    },
+    {
+      "date": "Feb 17 '26",
+      "close": 11.32
+    },
+    {
+      "date": "Feb 18 '26",
+      "close": 11.53
+    },
+    {
+      "date": "Feb 19 '26",
+      "close": 11.66
+    },
+    {
+      "date": "Feb 20 '26",
+      "close": 10.53
+    },
+    {
+      "date": "Feb 23 '26",
+      "close": 9.26
+    },
+    {
+      "date": "Feb 24 '26",
+      "close": 9.94
+    },
+    {
+      "date": "Feb 25 '26",
+      "close": 10.98
+    },
+    {
+      "date": "Feb 26 '26",
+      "close": 11.53
+    },
+    {
+      "date": "Feb 27 '26",
+      "close": 10.8
+    },
+    {
+      "date": "Mar 2 '26",
+      "close": 10.46
+    },
+    {
+      "date": "Mar 3 '26",
+      "close": 10.25
+    },
+    {
+      "date": "Mar 4 '26",
+      "close": 10.59
+    },
+    {
+      "date": "Mar 5 '26",
+      "close": 11.58
+    },
+    {
+      "date": "Mar 6 '26",
+      "close": 11.29
+    },
+    {
+      "date": "Mar 9 '26",
+      "close": 12.29
+    },
+    {
+      "date": "Mar 10 '26",
+      "close": 12.01
+    },
+    {
+      "date": "Mar 11 '26",
+      "close": 12.13
+    },
+    {
+      "date": "Mar 12 '26",
+      "close": 9.55
+    },
+    {
+      "date": "Mar 13 '26",
+      "close": 9.74
+    },
+    {
+      "date": "Mar 16 '26",
+      "close": 9.66
+    },
+    {
+      "date": "Mar 17 '26",
+      "close": 9.47
+    },
+    {
+      "date": "Mar 18 '26",
+      "close": 9.47
+    },
+    {
+      "date": "Mar 19 '26",
+      "close": 9.49
+    },
+    {
+      "date": "Mar 20 '26",
+      "close": 9.53
+    },
+    {
+      "date": "Mar 23 '26",
+      "close": 9.29
+    },
+    {
+      "date": "Mar 24 '26",
+      "close": 8.8
+    },
+    {
+      "date": "Mar 25 '26",
+      "close": 8.48
+    },
+    {
+      "date": "Mar 26 '26",
+      "close": 8.48
+    },
+    {
+      "date": "Mar 27 '26",
+      "close": 7.73
+    },
+    {
+      "date": "Mar 30 '26",
+      "close": 8.03
+    },
+    {
+      "date": "Mar 31 '26",
+      "close": 8.49
+    },
+    {
+      "date": "Apr 1 '26",
+      "close": 8.37
+    },
+    {
+      "date": "Apr 2 '26",
+      "close": 9.07
+    },
+    {
+      "date": "Apr 6 '26",
+      "close": 9.49
+    },
+    {
+      "date": "Apr 7 '26",
+      "close": 9.52
+    },
+    {
+      "date": "Apr 8 '26",
+      "close": 9.36
+    },
+    {
+      "date": "Apr 9 '26",
+      "close": 8.47
+    },
+    {
+      "date": "Apr 10 '26",
+      "close": 8.67
+    },
+    {
+      "date": "Apr 13 '26",
+      "close": 9.05
+    },
+    {
+      "date": "Apr 14 '26",
+      "close": 9.34
+    },
+    {
+      "date": "Apr 15 '26",
+      "close": 9.68
+    },
+    {
+      "date": "Apr 16 '26",
+      "close": 9.42
+    },
+    {
+      "date": "Apr 17 '26",
+      "close": 9.87
+    },
+    {
+      "date": "Apr 20 '26",
+      "close": 10.08
+    },
+    {
+      "date": "Apr 21 '26",
+      "close": 10.09
+    },
+    {
+      "date": "Apr 22 '26",
+      "close": 10.37
+    },
+    {
+      "date": "Apr 23 '26",
+      "close": 9.79
+    },
+    {
+      "date": "Apr 24 '26",
+      "close": 9.63
+    }
+  ]
+}
