@@ -1,19 +1,15 @@
 {
   "ticker": "NTSK",
-  "asOf": "2026-04-24",
-  "refreshedAt": "2026-04-27T03:21:53.410Z",
+  "asOf": "2026-04-27",
+  "refreshedAt": "2026-04-28T00:10:43.736Z",
   "market": {
-    "price": 9.63,
-    "prevClose": 9.79,
-    "dayChangePct": -1.63,
+    "price": 9.79,
+    "prevClose": 9.63,
+    "dayChangePct": 1.66,
     "yearLow": 7.73,
     "yearHigh": 23.5
   },
   "priceHistory": [
-    {
-      "date": "Dec 1 '25",
-      "close": 17.75
-    },
     {
       "date": "Dec 2 '25",
       "close": 17.88
@@ -409,6 +405,10 @@
     {
       "date": "Apr 24 '26",
       "close": 9.63
+    },
+    {
+      "date": "Apr 27 '26",
+      "close": 9.79
     }
   ]
 }
