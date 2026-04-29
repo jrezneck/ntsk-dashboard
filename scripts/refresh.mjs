@@ -10,9 +10,7 @@ const OUT = path.join("data", "ntsk.json");
 
 if (!API_KEY) { console.error("Missing ALPHA_VANTAGE_KEY"); process.exit(1); }
 
-// ─── Static comp fundamentals (update quarterly) ─────────────────────
-// EV = Market Cap + Debt - Cash. Market Cap is computed live below.
-// Forward revenue and growth update with each comp's earnings cycle.
+// Static comp fundamentals (update quarterly after each comp's earnings)
 const COMPS = [
   { ticker: "ZS",   name: "Zscaler",            sharesM: 156.0,  cashB: 2.95, debtB: 1.15, fwdRevB: 3.32,  growth: 24.0 },
   { ticker: "PANW", name: "Palo Alto Networks", sharesM: 666.0,  cashB: 3.50, debtB: 0.05, fwdRevB: 11.30, growth: 14.5 },
@@ -22,7 +20,6 @@ const COMPS = [
   { ticker: "NET",  name: "Cloudflare",         sharesM: 352.0,  cashB: 4.10, debtB: 3.52, fwdRevB: 2.30,  growth: 26.0 },
 ];
 
-// ─── Generic Alpha Vantage daily fetch ───────────────────────────────
 async function fetchDaily(ticker) {
   const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${ticker}&outputsize=compact&apikey=${API_KEY}`;
   const res = await fetch(url);
@@ -37,7 +34,6 @@ async function fetchDaily(ticker) {
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
-// ─── 1. NTSK full history for chart ──────────────────────────────────
 console.log("Fetching NTSK…");
 const ntskAll = await fetchDaily("NTSK");
 const IPO_DATE = "2025-09-18";
@@ -49,9 +45,6 @@ const closes = ntskSinceIpo.map((d) => d.close);
 const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const fmtDate = (iso) => { const [y,m,d] = iso.split("-"); return `${months[+m-1]} ${+d} '${y.slice(2)}`; };
 
-// ─── 2. Latest price for each comp ────────────────────────────────────
-// Alpha Vantage free tier: 25 calls/day. We use 1 + 6 = 7 calls.
-// Sleep 12s between calls to stay under 5/min rate limit.
 const compResults = [];
 for (const c of COMPS) {
   console.log(`Fetching ${c.ticker}…`);
@@ -72,13 +65,10 @@ for (const c of COMPS) {
     });
   } catch (e) {
     console.error(`  Failed for ${c.ticker}: ${e.message}`);
-    // Continue with other comps even if one fails
   }
-  // Throttle to be polite to free API
   await new Promise((r) => setTimeout(r, 12000));
 }
 
-// ─── 3. Write output JSON ────────────────────────────────────────────
 const output = {
   ticker: "NTSK",
   asOf: last.date,
