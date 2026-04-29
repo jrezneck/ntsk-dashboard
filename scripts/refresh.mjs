@@ -20,10 +20,19 @@ const COMPS = [
   { ticker: "NET",  name: "Cloudflare",         sharesM: 352.0,  cashB: 4.10, debtB: 3.52, fwdRevB: 2.30,  growth: 26.0 },
 ];
 
-async function fetchDaily(ticker) {
+async function fetchDaily(ticker, attempt = 1) {
   const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${ticker}&outputsize=compact&apikey=${API_KEY}`;
   const res = await fetch(url);
   const raw = await res.json();
+
+  // If rate limited, wait and retry up to 3 times
+  if ((raw["Information"] || raw["Note"]) && attempt < 4) {
+    const wait = 30 * attempt; // 30s, 60s, 90s
+    console.log(`  ${ticker}: rate limited, waiting ${wait}s and retrying (attempt ${attempt + 1}/4)...`);
+    await new Promise((r) => setTimeout(r, wait * 1000));
+    return fetchDaily(ticker, attempt + 1);
+  }
+
   if (raw["Information"] || raw["Note"] || raw["Error Message"]) {
     throw new Error(`${ticker}: ${JSON.stringify(raw)}`);
   }
@@ -66,7 +75,7 @@ for (const c of COMPS) {
   } catch (e) {
     console.error(`  Failed for ${c.ticker}: ${e.message}`);
   }
-  await new Promise((r) => setTimeout(r, 12000));
+  await new Promise((r) => setTimeout(r, 15000));
 }
 
 const output = {
