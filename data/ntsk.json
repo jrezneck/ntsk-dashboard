@@ -1,7 +1,7 @@
 {
   "ticker": "NTSK",
   "asOf": "2026-04-28",
-  "refreshedAt": "2026-04-29T03:02:55.912Z",
+  "refreshedAt": "2026-04-29T16:07:53.554Z",
   "market": {
     "price": 9.98,
     "prevClose": 9.79,
@@ -412,6 +412,16 @@
     }
   ],
   "comps": [
+    {
+      "ticker": "ZS",
+      "name": "Zscaler",
+      "price": 136.07,
+      "marketCapB": 21.23,
+      "evB": 19.43,
+      "fwdRevB": 3.32,
+      "growth": 24,
+      "evRev": 5.85
+    },
     {
       "ticker": "PANW",
       "name": "Palo Alto Networks",
