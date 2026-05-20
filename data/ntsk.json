@@ -1,7 +1,7 @@
 {
   "ticker": "NTSK",
   "asOf": "2026-05-19",
-  "refreshedAt": "2026-05-20T08:48:54.156Z",
+  "refreshedAt": "2026-05-20T16:06:48.156Z",
   "market": {
     "price": 11.43,
     "prevClose": 11.37,
@@ -416,41 +416,41 @@
       "ticker": "ZS",
       "name": "Zscaler",
       "price": 175.25,
-      "marketCapB": 27.34,
-      "evB": 25.54,
+      "marketCapB": 28.15,
+      "evB": 25.79,
       "fwdRevB": 3.32,
       "growth": 24,
-      "evRev": 7.69
+      "evRev": 7.77
     },
     {
       "ticker": "PANW",
       "name": "Palo Alto Networks",
       "price": 240.13,
-      "marketCapB": 159.93,
-      "evB": 156.48,
+      "marketCapB": 167.13,
+      "evB": 162.97,
       "fwdRevB": 11.3,
       "growth": 14.5,
-      "evRev": 13.85
+      "evRev": 14.42
     },
     {
       "ticker": "CRWD",
       "name": "CrowdStrike",
       "price": 616.88,
-      "marketCapB": 152.68,
-      "evB": 149.02,
+      "marketCapB": 157,
+      "evB": 152.51,
       "fwdRevB": 5.9,
-      "growth": 22.8,
-      "evRev": 25.26
+      "growth": 23,
+      "evRev": 25.85
     },
     {
       "ticker": "FTNT",
       "name": "Fortinet",
       "price": 127.64,
-      "marketCapB": 94.45,
-      "evB": 92.45,
-      "fwdRevB": 6.95,
-      "growth": 12,
-      "evRev": 13.3
+      "marketCapB": 93.18,
+      "evB": 91.18,
+      "fwdRevB": 7.79,
+      "growth": 15,
+      "evRev": 11.7
     },
     {
       "ticker": "S",
@@ -458,19 +458,19 @@
       "price": 17.66,
       "marketCapB": 6.01,
       "evB": 5.4,
-      "fwdRevB": 0.99,
-      "growth": 24,
-      "evRev": 5.45
+      "fwdRevB": 1.2,
+      "growth": 19,
+      "evRev": 4.5
     },
     {
       "ticker": "NET",
       "name": "Cloudflare",
       "price": 206.73,
-      "marketCapB": 72.77,
-      "evB": 72.19,
-      "fwdRevB": 2.3,
-      "growth": 26,
-      "evRev": 31.39
+      "marketCapB": 80.21,
+      "evB": 79.28,
+      "fwdRevB": 2.81,
+      "growth": 30,
+      "evRev": 28.21
     }
   ]
 }
