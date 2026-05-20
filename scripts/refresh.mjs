@@ -12,12 +12,12 @@ if (!API_KEY) { console.error("Missing ALPHA_VANTAGE_KEY"); process.exit(1); }
 
 // Static comp fundamentals (update quarterly after each comp's earnings)
 const COMPS = [
-  { ticker: "ZS",   name: "Zscaler",            sharesM: 156.0,  cashB: 2.95, debtB: 1.15, fwdRevB: 3.32,  growth: 24.0 },
-  { ticker: "PANW", name: "Palo Alto Networks", sharesM: 666.0,  cashB: 3.50, debtB: 0.05, fwdRevB: 11.30, growth: 14.5 },
-  { ticker: "CRWD", name: "CrowdStrike",        sharesM: 247.5,  cashB: 4.40, debtB: 0.74, fwdRevB: 5.90,  growth: 22.8 },
-  { ticker: "FTNT", name: "Fortinet",           sharesM: 740.0,  cashB: 2.50, debtB: 0.50, fwdRevB: 6.95,  growth: 12.0 },
-  { ticker: "S",    name: "SentinelOne",        sharesM: 340.3,  cashB: 0.63, debtB: 0.02, fwdRevB: 0.99,  growth: 24.0 },
-  { ticker: "NET",  name: "Cloudflare",         sharesM: 352.0,  cashB: 4.10, debtB: 3.52, fwdRevB: 2.30,  growth: 26.0 },
+  { ticker: "ZS",   name: "Zscaler",            sharesM: 160.6,  cashB: 3.51, debtB: 1.15, fwdRevB: 3.32,  growth: 24.0 },
+  { ticker: "PANW", name: "Palo Alto Networks", sharesM: 696.0,  cashB: 4.16, debtB: 0.00, fwdRevB: 11.30, growth: 14.5 },
+  { ticker: "CRWD", name: "CrowdStrike",        sharesM: 254.5,  cashB: 5.23, debtB: 0.74, fwdRevB: 5.90,  growth: 23.0 },
+  { ticker: "FTNT", name: "Fortinet",           sharesM: 730.0,  cashB: 2.50, debtB: 0.50, fwdRevB: 7.79,  growth: 15.0 },
+  { ticker: "S",    name: "SentinelOne",        sharesM: 340.3,  cashB: 0.63, debtB: 0.02, fwdRevB: 1.20,  growth: 19.0 },
+  { ticker: "NET",  name: "Cloudflare",         sharesM: 388.0,  cashB: 4.20, debtB: 3.27, fwdRevB: 2.81,  growth: 30.0 },
 ];
 
 async function fetchDaily(ticker, attempt = 1) {
