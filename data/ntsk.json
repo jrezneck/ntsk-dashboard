@@ -1,19 +1,15 @@
 {
   "ticker": "NTSK",
-  "asOf": "2026-07-10",
-  "refreshedAt": "2026-07-10T22:35:29.350Z",
+  "asOf": "2026-07-13",
+  "refreshedAt": "2026-07-13T22:32:08.935Z",
   "market": {
-    "price": 12.32,
-    "prevClose": 12.42,
-    "dayChangePct": -0.81,
+    "price": 12.8,
+    "prevClose": 12.32,
+    "dayChangePct": 3.9,
     "yearLow": 7.73,
     "yearHigh": 12.86
   },
   "priceHistory": [
-    {
-      "date": "Feb 17 '26",
-      "close": 11.32
-    },
     {
       "date": "Feb 18 '26",
       "close": 11.53
@@ -409,48 +405,52 @@
     {
       "date": "Jul 10 '26",
       "close": 12.32
+    },
+    {
+      "date": "Jul 13 '26",
+      "close": 12.8
     }
   ],
   "comps": [
     {
       "ticker": "ZS",
       "name": "Zscaler",
-      "price": 139.27,
-      "marketCapB": 22.37,
-      "evB": 20.01,
+      "price": 141.82,
+      "marketCapB": 22.78,
+      "evB": 20.42,
       "fwdRevB": 3.32,
       "growth": 24,
-      "evRev": 6.03
+      "evRev": 6.15
     },
     {
       "ticker": "PANW",
       "name": "Palo Alto Networks",
-      "price": 325.91,
-      "marketCapB": 226.83,
-      "evB": 222.67,
+      "price": 330.3,
+      "marketCapB": 229.89,
+      "evB": 225.73,
       "fwdRevB": 11.3,
       "growth": 14.5,
-      "evRev": 19.71
+      "evRev": 19.98
     },
     {
       "ticker": "CRWD",
       "name": "CrowdStrike",
-      "price": 187.18,
-      "marketCapB": 47.64,
-      "evB": 43.15,
+      "price": 187.91,
+      "marketCapB": 47.82,
+      "evB": 43.33,
       "fwdRevB": 5.9,
       "growth": 23,
-      "evRev": 7.31
+      "evRev": 7.34
     },
     {
       "ticker": "FTNT",
       "name": "Fortinet",
-      "price": 157.51,
-      "marketCapB": 114.98,
-      "evB": 112.98,
+      "price": 160.62,
+      "marketCapB": 117.25,
+      "evB": 115.25,
       "fwdRevB": 7.79,
       "growth": 15,
-      "evRev": 14.5
+      "evRev": 14.79
     },
     {
       "ticker": "S",
@@ -465,12 +465,12 @@
     {
       "ticker": "NET",
       "name": "Cloudflare",
-      "price": 268.4,
-      "marketCapB": 104.14,
-      "evB": 103.21,
+      "price": 269.55,
+      "marketCapB": 104.59,
+      "evB": 103.66,
       "fwdRevB": 2.81,
       "growth": 30,
-      "evRev": 36.73
+      "evRev": 36.89
     }
   ]
 }
