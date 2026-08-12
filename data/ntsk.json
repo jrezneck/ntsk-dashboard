@@ -1,19 +1,15 @@
 {
   "ticker": "NTSK",
-  "asOf": "2026-08-11",
-  "refreshedAt": "2026-08-11T22:21:43.174Z",
+  "asOf": "2026-08-12",
+  "refreshedAt": "2026-08-12T22:21:27.795Z",
   "market": {
-    "price": 15.39,
-    "prevClose": 15.67,
-    "dayChangePct": -1.79,
+    "price": 14.99,
+    "prevClose": 15.39,
+    "dayChangePct": -2.6,
     "yearLow": 7.73,
     "yearHigh": 15.67
   },
   "priceHistory": [
-    {
-      "date": "Mar 19 '26",
-      "close": 9.49
-    },
     {
       "date": "Mar 20 '26",
       "close": 9.53
@@ -409,35 +405,39 @@
     {
       "date": "Aug 11 '26",
       "close": 15.39
+    },
+    {
+      "date": "Aug 12 '26",
+      "close": 14.99
     }
   ],
   "comps": [
     {
       "ticker": "ZS",
       "name": "Zscaler",
-      "price": 178.55,
-      "marketCapB": 28.68,
-      "evB": 26.32,
+      "price": 177.32,
+      "marketCapB": 28.48,
+      "evB": 26.12,
       "fwdRevB": 3.32,
       "growth": 24,
-      "evRev": 7.93
+      "evRev": 7.87
     },
     {
       "ticker": "PANW",
       "name": "Palo Alto Networks",
-      "price": 383.8,
-      "marketCapB": 267.12,
-      "evB": 262.96,
+      "price": 387.01,
+      "marketCapB": 269.36,
+      "evB": 265.2,
       "fwdRevB": 11.3,
       "growth": 14.5,
-      "evRev": 23.27
+      "evRev": 23.47
     },
     {
       "ticker": "CRWD",
       "name": "CrowdStrike",
-      "price": 221.9,
-      "marketCapB": 56.47,
-      "evB": 51.98,
+      "price": 221.78,
+      "marketCapB": 56.44,
+      "evB": 51.95,
       "fwdRevB": 5.9,
       "growth": 23,
       "evRev": 8.81
@@ -445,32 +445,32 @@
     {
       "ticker": "FTNT",
       "name": "Fortinet",
-      "price": 161.89,
-      "marketCapB": 118.18,
-      "evB": 116.18,
+      "price": 160.84,
+      "marketCapB": 117.41,
+      "evB": 115.41,
       "fwdRevB": 7.79,
       "growth": 15,
-      "evRev": 14.91
+      "evRev": 14.82
     },
     {
       "ticker": "S",
       "name": "SentinelOne",
-      "price": 22.46,
-      "marketCapB": 7.64,
-      "evB": 7.03,
+      "price": 22.3,
+      "marketCapB": 7.59,
+      "evB": 6.98,
       "fwdRevB": 1.2,
       "growth": 19,
-      "evRev": 5.86
+      "evRev": 5.81
     },
     {
       "ticker": "NET",
       "name": "Cloudflare",
-      "price": 306.91,
-      "marketCapB": 119.08,
-      "evB": 118.15,
+      "price": 311.46,
+      "marketCapB": 120.85,
+      "evB": 119.92,
       "fwdRevB": 2.81,
       "growth": 30,
-      "evRev": 42.05
+      "evRev": 42.67
     }
   ]
 }
